@@ -8,7 +8,7 @@ import { Data } from './home/Data';
 
 export function TextWithImage(props) {
         return(
-            <section className="home-section">
+            <section className="home-section" id="home">
             <div className='home-container container grid'>
             <div className='home-content grid'>
             <div className='home-img animate__zoomInDown animate__animated animate__bounce'> <img src={image} alt='esta es la imagen'></img></div>

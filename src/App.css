@@ -86,7 +86,7 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
+  background-color: rgba(220, 220, 223, 0.91);
   color: var(--text-color);
 }
 
@@ -243,12 +243,8 @@ background: radial-gradient(circle, rgba(67,139,161,1) 0%, rgba(20,67,122,1) 90%
 /* This changes all the animations globally */
 
 
-.home__social {
-  display: grid;
-  grid-template-columns: max-content;
-  row-gap: 1rem;
 
-}
+
 .home__social-icon {
   font-size: 1.25rem;
   color: var(--title-color);

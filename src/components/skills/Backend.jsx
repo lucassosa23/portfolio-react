@@ -4,13 +4,13 @@ const Backend = () => {
   return (
 
 <div className='skills__content'>
-    <h3 className='title__skills'>Frontend Developer</h3>
+    <h3 className='title__skills'>Backend Developer</h3>
    
 
 <div className='skills__box'>
 <div className='skills__group'>
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 
 
 <div>  
@@ -25,7 +25,7 @@ Python
 
 
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 <div>  
 <h3 className='skills__name'>
 PHP
@@ -38,7 +38,7 @@ PHP
 
 
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 
 <div>  
 <h3 className='skills__name'>
@@ -50,7 +50,7 @@ MongoDB
 </div>
 <div className='skills__group'>
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 <div>  
 <h3 className='skills__name'>
 Firebase
@@ -60,7 +60,7 @@ Firebase
 </div>
 
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 <div>  
 <h3 className='skills__name'>
 Nodejs
@@ -70,7 +70,7 @@ Nodejs
 </div>
 
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 <div>  
 <h3 className='skills__name'>
 MySQL

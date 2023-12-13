@@ -1,14 +1,31 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./contact.css"
 
 const Contact = () => {
-  return (
+  
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_qpinx8q', 'template_r33n0ib', form.current, 'Xf4aP3CZ1yyvQ2zRe')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+  
+  
+  
+    return (
   
     <section className='contact section' id="contact">
     <h1 className='section__title'>
     Contact
    </h1>
-   <span className='section__subtitle'> My introduction</span>
+   <span className='section__subtitle'> Comunicate</span>
     <div className='contact__container container grid'>
      <div className='contact__content'>
      <h3 className='contact__title'>Contactame</h3>
@@ -18,43 +35,40 @@ const Contact = () => {
      <div className='contact__card'>
      <i className="contact__card-icon"></i>
      <h3 className='contact__card-title'>Email</h3>
-     <span className='contact__card-data'>user@gmail.com</span>
-     <a href="mailto:luucassosa4@gmail.com" className='contact__button'><i class="uis uis-angle-right-b contact__buton-icon"> Write me </i></a>
+     <span className='contact__card-data'>luucassosa4@gmail.com</span>
+     <a href="mailto:luucassosa4@gmail.com" className='contact__button'><i className="uis uis-angle-right-b contact__buton-icon"> </i></a>
      </div>
 
      <div className='contact__info'>
      <div className='contact__card'>
-     <i class="uis uis-apps"></i>
+     <i className="contact__card-icon"></i>
      <h3 className='contact__card-title'>Whatsapp</h3>
-     <span className='contact__card-data'>112323232</span>
-     <a href="/blank" className='contact__button'> Write me <i class="uis uis-corner-down-left contact__button-icon"></i></a>
+     <span className='contact__card-data'>1122530713</span>
+     <a href="mailto:luucassosa4@gmail.com" className='contact__button'><i className="uis uis-angle-right-b contact__buton-icon"></i></a>
      </div>
 
      <div className='contact__info'>
      <div className='contact__card'>
-     <i class="uis uis-apps"></i>
      <h3 className='contact__card-title'>Github</h3>
      <span className='contact__card-data'>lucassosa23</span>
-     <a href="/blank" className='contact__button'> Write me <i class="uis uis-corner-down-left contact__button-icon"></i></a>
+     <a href="https://github.com/lucassosa23" className='contact__button'> Write me <i className="uis uis-corner-down-left contact__button-icon"></i></a>
      </div>
 
      </div>
 
      <div className='contact__info'>
      <div className='contact__card'>
-     <i class="uis uis-apps"></i>
      <h3 className='contact__card-title'>Linkedin</h3>
-     <span className='contact__card-data'>lucassosa2</span>
-     <a href="/blank" className='contact__button'> Write me <i class="uis uis-corner-down-left contact__button-icon"></i></a>
+     <span className='contact__card-data'>Lucas Sosa</span>
+     <a href="https://www.linkedin.com/in/lucas-sosa-b66165233/ " className='contact__button'> Write me <i className="uis uis-corner-down-left contact__button-icon"></i></a>
      </div>
      </div>
 
      <div className='contact__info'>
      <div className='contact__card'>
-     <i class="uis uis-apps"></i>
      <h3 className='contact__card-title'>Instagram</h3>
      <span className='contact__card-data'>lucassosa4</span>
-     <a href="/blank" className='contact__button'> Write me <i class="uis uis-corner-down-left contact__button-icon"></i></a>
+     <a href="https://www.instagram.com/lucassosa4/" className='contact__button'> Write me <i className="uis uis-corner-down-left contact__button-icon"></i></a>
      </div>
      </div>
      </div>
@@ -63,7 +77,7 @@ const Contact = () => {
     
      <div className='contact__content'>
     <h3 className='contact__title'>Write your project</h3>
-    <form className='contact__form'>
+    <form className='contact__form' ref={form} onSubmit={sendEmail}>
         <div className='contact__form-div'>
             <label className='contact__form-tag'>Name</label>
             <input type='text' name='name' className='contact__form-input' placeholder='Insert your name'/>
@@ -84,7 +98,7 @@ const Contact = () => {
         <button className='button button-flex'>Send message</button>
     </form>
      </div>
-    </div>          
+             </div>
   </section>
   
     )

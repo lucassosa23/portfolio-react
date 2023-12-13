@@ -5,12 +5,12 @@ import "./about.css"
 
 export const About = () => {
   return (
-    <div className='about-sectione'>
+    <div className='about-sectione' id="about">
     <div className='about-section container'>
       <h1 className='about-title'>
         About
       </h1>
-      <span className='about-subtitle'> My introduction</span>
+      <span className='about-subtitle'> Mi introduccion</span>
      
      
 

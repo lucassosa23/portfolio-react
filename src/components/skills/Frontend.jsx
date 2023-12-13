@@ -11,7 +11,7 @@ const Frontend = () => {
 <div className='skills__box'>
 <div className='skills__group'>
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 
 
 <div>  
@@ -26,7 +26,7 @@ HTML
 
 
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 <div>  
 <h3 className='skills__name'>
 CSS
@@ -37,7 +37,7 @@ CSS
 
 
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 <div>  
 <h3 className='skills__name'>
 Javascript
@@ -47,7 +47,7 @@ Javascript
 </div>
 
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 
 <div>  
 <h3 className='skills__name'>
@@ -59,7 +59,7 @@ ReactJS
 </div>
 <div className='skills__group'>
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 <div>  
 <h3 className='skills__name'>
 Bootstrap
@@ -69,7 +69,7 @@ Bootstrap
 </div>
 
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 <div>  
 <h3 className='skills__name'>
 Git
@@ -79,7 +79,7 @@ Git
 </div>
 
 <div className='skills__data'>
-<i class="uil uil-graph-bar"></i>
+<i className="uil uil-graph-bar"></i>
 <div>  
 <h3 className='skills__name'>
 Typescript
@@ -89,7 +89,7 @@ Typescript
 </div>
 
 <div className='skills__data'>
-<i class='uil uil-graph-bar'></i>
+<i className='uil uil-graph-bar'></i>
 <div>  
 <h3 className='skills__name'>
 Sass
